@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="result.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="celebration">
+          <div class="image_wrapper">
+            <img src="images/stars.png" alt="celebration" />
+            <img src="images/trophy.png" alt="celebration" />
+          </div>
+          <div class="text_wrapper">
+            <h1>HURRAY!</h1>
+            <p>You won the game</p>
+          </div>
+          <a href="/index.html" class="play_again">PLAY AGAIN</a>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const btn = document.querySelector(".play_again");
+    btn.addEventListener("click" , () =>{
+      localStorage.clear();
+    })
+  </script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="f()">
+    <header>
+      <div class="game_header">
+        <div class="game_title">
+          <p>Rock</p>
+          <p>Paper</p>
+          <p>Sicssors</p>
+        </div>
+
+        <div class="score">
+          <div class="score_card">
+            <p style="text-align: center">&nbsp &nbsp YOUR &nbsp &nbsp SCORE</p>
+            <p class="my_score score_no"></p>
+          </div>
+          <div class="score_card">
+            <p style="text-align: center">COMPUTER SCORE</p>
+            <p class="pc_score score_no"></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="select">
+        <div class="parent1">
+          <img src="images/rock.png" class="rock" />
+        </div>
+        <div class="line1"></div>
+        <div class="parent2">
+          <img src="images/scissors.png" class="scissors" />
+        </div>
+      </div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+      <div class="parent3_img">
+        <div class="parent3">
+          <img src="images/paper.png" class="paper" />
+        </div>
+      </div>
+    </div>
+
+    <div class="res" style="display: none;">
+       <div class="youPick"></div>
+       <div class="playAgain">
+        <p class="btn"></p>
+       </div>
+       <div class="pcPick"></div>
+    </div>
+
+    <div id="rules">
+      <h1 style="text-align: center">Game Rules</h1>
+      <ul style="list-style-type: square">
+        <li>
+          "Rock beats scissors, scissors beat paper, and paper beats rock."
+        </li>
+        <li>
+          "Agree ahead of time whether you will count off “rock, paper,scissors,
+          shoot” or just “rock, paper, scissors.”
+        </li>
+        <li>
+          "Use rock, paper, scissors to settle minor decisions or simply play to
+          pass the time"
+        </li>
+        <li>
+          "If both players lay down the same hand, each player lays down another
+          hand"
+        </li>
+      </ul>
+    </div>
+    <button class="rules_button" onclick="showContent()">RULES</button>
+
+    <div class="result"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
