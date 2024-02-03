@@ -177,7 +177,7 @@ const game = () => {
             pc_picked.src = paperImg;
             pcDiv.appendChild(pc_picked);
         }
-        if(pcPicked == 'scissor'){
+        if(pcPicked == 'scissors'){
             pc_picked.src = scissorImg;
             pcDiv.appendChild(pc_picked);
         }
